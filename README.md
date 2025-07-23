@@ -1,40 +1,40 @@
 # flask-minimal
 
-A minimal Flask starter project designed to help you quickly set up a clean, simple, and efficient web application. This project is structured to keep things lightweight and focuses on productivity, with all your code contained in a single file (`app.py`), along with basic templates and static assets.
+Flask-minimal merupakan proyek awal berbasis Flask yang dirancang untuk memudahkan dalam membangun aplikasi web secara cepat dan efisien. Proyek ini dibuat dengan ringan dan struktur yang sederhana sehingga semua kode utama disimpan didalam satu file (`app.py`) dan juga sudah dilengkapi dengan template dasar dan file statis untuk memulai pengembangan lebih praktis.
 
 
-## Features
-- Single-file Flask application (`app.py`) to maximize productivity and simplicity.
-- Basic HTML template structure with minimal styling and JavaScript.
-- Simple and intuitive project setup with no unnecessary complexity.
-- Easily customizable for rapid development of web applications.
+## Fitur
+- Aplikasi Flask dalam satu file (`app.py`) untuk memudahkan pengembangan dan meningkatkan produktivitas.
+- Struktur templat HTML dasar dengan gaya minimalis dan JavaScript sederhana.
+- Pengaturan proyek yang sederhana dan mudah dipahami.
+- Mudah disesuaikan untuk mempercepat proses pembuatan aplikasi web.
 
-## Preparation
+## Persiapan
 ```bash
 sudo apt update
 sudo apt install python3 python3-venv python3-pip -y
 ```
 
-## Installation
+## Instalasi
 
-1. Clone the repository:
+1. Klon repositori proyeknya dulu:
    ```bash
    git clone https://github.com/yourusername/flask-minimal.git
    cd flask-minimal
    ```
 
-2. Create a virtual environment (recommended):
+2. Buat virtual environment (agar lebih rapi dan terpisah):
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    ```
 
-3. Install the required dependencies:
+3. Instal dependensi yang diperlukan:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Run the app:
+4. Jalankan aplikasinya:
    ```bash
    python app.py
    ```

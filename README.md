@@ -42,6 +42,50 @@ sudo apt install python3 python3-venv python3-pip -y
 Aplikasi Flask kamu sudah aktif dan bisa diakses lewat browser dengan membuka alamat:
 `http://(ip publik kamu):5000`
 
+
+## 🔁 Menjalankan Otomatis Setelah Reboot
+
+1. Buat Script Startup
+   ```bash
+   nano ~/flask-minimal/start-flask.sh
+   ```
+
+   Isi:
+   ```bash
+   #!/bin/bash
+   cd ~/flask-minimal
+   source venv/bin/activate
+   python app.py
+   ```
+
+   Simpan dan Beri Izin Eksekusi
+   ```bash
+   chmod +x ~/flask-minimal/start-flask.sh
+   ```
+
+2. Tambahkan ke Crontab
+   ```bash
+   crontab -e
+   ```
+
+   Tambahkan baris ini dibagian bawah
+   ```bash
+   @reboot /home/ubuntu/flask-minimal/start-flask.sh
+   ```
+   ganti home dan Ubuntu dengan path sesuai sistem kamu
+
+
+3. Reboot dan Tes
+   ```bash
+   sudo reboot
+   ```
+
+   Setelah server hidup kembali, akses aplikasi Flask melalui browser:
+   ```cpp
+   http://<IP-server>:5000
+   ```
+
+
 ## Usage
 
 This starter project is ready to be used as a foundation for building web applications. The app.py file contains all the Flask routes and logic, making it simple to expand and customize. You can add more templates, routes, or static files as needed.

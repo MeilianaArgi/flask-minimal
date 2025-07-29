@@ -39,7 +39,8 @@ sudo apt install python3 python3-venv python3-pip -y
    python app.py
    ```
 
-The Flask app will start, and you can view it by navigating to http://localhost:5000 in your browser.
+Aplikasi Flask kamu sudah aktif dan bisa diakses lewat browser dengan membuka alamat:
+http://(ip publik kamu):5000
 
 ## Usage
 

@@ -40,7 +40,7 @@ sudo apt install python3 python3-venv python3-pip -y
    ```
 
 Aplikasi Flask kamu sudah aktif dan bisa diakses lewat browser dengan membuka alamat:
-http://(ip publik kamu):5000
+`http://(ip publik kamu):5000`
 
 ## Usage
 

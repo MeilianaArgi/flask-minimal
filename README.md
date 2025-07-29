@@ -86,23 +86,31 @@ Aplikasi Flask kamu sudah aktif dan bisa diakses lewat browser dengan membuka al
    ```
 
 
-## Usage
+## 🛡️ Catatan Tambahan (Untuk Server EC2)
 
-This starter project is ready to be used as a foundation for building web applications. The app.py file contains all the Flask routes and logic, making it simple to expand and customize. You can add more templates, routes, or static files as needed.
+Jika menggunakan AWS EC2:
+1. Pastikan Port 5000 dibuka di security group
+2. Tambahkan rule:
+   `Custom TCP → Port 5000 → Source: Anywhere (0.0.0.0/0)`
+   
 
-## Customization
-You can easily modify:
+## Penggunaan 
 
- - The HTML structure in `templates/index.html`
- - The styling in `static/style.css`
- - The interactivity in `static/script.js`
+Proyek ini sudah siap digunakan sebagai dasar untuk membangun aplikasi web. File app.py berisi semua rute dan logika dasar Flask, sehingga mudah untuk dikembangkan dan disesuaikan. Anda dapat menambahkan lebih banyak template, rute, atau file statis sesuai kebutuhan.
 
-Feel free to update the app.py file to add your routes or any additional logic to fit your needs.
+## Kostumisasi 
+Anda dapat dengan mudah mengubah:
 
-## License
-This project is licensed under the MIT License.
+ - Struktur HTML di dalam `templates/index.html`
+ - Gaya Tampilan (CSS) di dalam `static/style.css`
+ - Interaktivitas (JavaScript) di dalam `static/script.js`
 
-## Contributing
-Feel free to fork this repository and create pull requests if you have improvements or bug fixes. If you have any suggestions, open an issue, and we’ll discuss it!
+Silakan ubah file app.py untuk menambahkan rute baru atau logika tambahan sesuai kebutuhan proyek Anda.
 
-This project is built with simplicity and efficiency in mind, perfect for quickly starting small web apps or prototypes with minimal overhead.
+## Lisensi
+Proyek ini menggunakan lisensi MIT.
+
+## Kontribusi 
+Jangan ragu untuk melakukan forking repositori ini dan membuat permintaan tarik jika Anda memiliki perbaikan atau perbaikan bug. Jika Anda memiliki saran, sampaikan masalah Anda, dan kami akan membahasnya!
+
+Proyek ini dibangun dengan mempertimbangkan kesederhanaan dan efisiensi, cocok untuk memulai aplikasi web kecil atau prototipe dengan cepat dengan overhead minimal.
